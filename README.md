@@ -22,11 +22,10 @@ A simple Text-to-Speech (TTS) converter built using Python's `pyttsx3` library a
 
 ## Features
 - Enter text to convert to speech.
-- Select between male or female voice.
 - Save the converted speech as an MP3 file.
 - Built with Python, Tkinter, and pyttsx3.
 
-If you want to write a message to encourage contributions to your project, it’s essential to make it welcoming, clear, and concise. Here's an example message that you can include in your project's repository (like in the `README.md` or a `CONTRIBUTING.md` file):
+If you want to write a message to encourage contributions to your project, it’s essential to make it welcoming, clear, and concise. Here's an example message that you can include in your project's repository (like in the `README.md`):
 
 ---
 
