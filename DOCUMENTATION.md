@@ -11,9 +11,8 @@ The TTS Converter is a Python-based program that converts text into speech. It p
 ## How It Works
 The program initializes a Tkinter window with fields to input text, select the desired voice, and specify the output filename. Upon clicking the "Convert to Speech" button:
 1. The program reads the text input from the user.
-2. The user can select the voice type (Male or Female).
-3. The text is passed to the `pyttsx3` engine, which converts the text to speech.
-4. The resulting speech is saved as an MP3 file.
+2. The text is passed to the `pyttsx3` engine, which converts the text to speech.
+3. The resulting speech is saved as an MP3 file.
 
 ### Components
 1. **Text Input**: A large text box where the user can type the text to be converted to speech.
@@ -32,9 +31,8 @@ The program initializes a Tkinter window with fields to input text, select the d
 ## Example
 
 1. Text: `Hello, welcome to the TTS Converter.`
-2. Voice: Female
-3. Filename: `greeting`
-4. Result: The speech will be saved as `greeting.mp3`.
+2. Filename: `greeting`
+3. Result: The speech will be saved as `greeting.mp3`.
 
 ## License
 
