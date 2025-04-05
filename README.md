@@ -30,6 +30,9 @@ If you want to write a message to encourage contributions to your project, it’
 
 ---
 
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Contributing to tts-converter
 
 We welcome contributions from the community! Whether you're fixing bugs, adding new features, improving documentation, or providing feedback, your help is greatly appreciated.
