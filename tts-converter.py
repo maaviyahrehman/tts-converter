@@ -23,17 +23,11 @@ def save_speech():
     # Get available voices
     voices = engine.getProperty('voices')
 
-    # Set the chosen voice
-    if voice_choice == 'Male':
-        for voice in voices:
-            if "male" in voice.name.lower():
-                engine.setProperty('voice', voice.id)
-                break
-    elif voice_choice == 'Female':
-        for voice in voices:
-            if "female" in voice.name.lower():
-                engine.setProperty('voice', voice.id)
-                break
+    # Set the chosen voice to male only
+    for voice in voices:
+        if "male" in voice.name.lower():
+            engine.setProperty('voice', voice.id)
+            break
 
     # Set speech rate and volume
     engine.setProperty('rate', 150)
@@ -62,12 +56,10 @@ text_entry.pack(pady=5)
 voice_label = tk.Label(root, text="Select voice:")
 voice_label.pack(pady=5)
 
-# Create radio buttons for voice selection
+# Create radio buttons for voice selection (only Male)
 voice_var = tk.StringVar(value="Male")
 male_voice_rb = tk.Radiobutton(root, text="Male", variable=voice_var, value="Male")
-female_voice_rb = tk.Radiobutton(root, text="Female", variable=voice_var, value="Female")
 male_voice_rb.pack()
-female_voice_rb.pack()
 
 # Create a label for filename input
 filename_label = tk.Label(root, text="Enter output filename (without extension):")
